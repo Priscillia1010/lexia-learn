@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+:root {
+    --dark-blue: #00498E;
+    --medium-blue: #5B90E0;
+    --light-blue: #A2D2FF;
+    --blue-grey: #80ADD7;
+    --blue-green: #3BDBF1;
+    --green-blue: #3BF1D0;
+    --light-grey: #D9D9D9;
+    --yellow-brown: #FFCF71;
+    --orange : #FF6B00;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .atas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.container .atas .info, .container .atas .button {
+    display: flex;
+    align-items: center;
+}
+
+.container .atas .info .logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.container .atas .info .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.container .atas .info .logo h3 {
+    font-size: 14px;
+    color: var(--dark-blue);
+    position: relative; 
+    margin: 0; 
+}
+
+.container .atas .info h2 {
+    width: 200px;
+    color: var(--dark-blue);
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.container .atas .info .items-container {
+    width: 300px;
+    align-items: center;
+    display: flex;
+    margin-left: 220px;
+}
+
+.container .atas .info .items-container .items {
+    width: 90px;
+    align-items: center;
+    display: flex;
+}
+
+.container .atas .info .items-container .items img {
+    width: 40px;
+    height: 40px;
+}
+
+.container .atas .info .items-container .items p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.container .atas .button a {
+    background-color: var(--blue-green);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    width: 115px;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.container .atas .button a:hover {
+    background: var(--light-blue);
+}
+
+.container .atas .button button, .container .atas .button img {
+    margin-left: 800px;
+}
+
+.container .atas .button button {
+    background-color: var(--dark-blue);
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+}
+
+.container .atas .button img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.container .mid {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .mid .isian {
+    display: flex;
+    align-items: center;
+    margin-left: 370px;
+}
+
+.container .mid .isian .isian-huruf {
+    width: 80px;
+    height: 80px;
+    background-color: var(--green-blue);
+    border: 1px solid var(--yellow-brown);
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.container .mid .isian .clue {
+    font-size: 20px;
+    color: #fff;
+    background: var(--blue-green);
+    border: none;
+}
+
+.container .mid .isian .clue h3 {
+    margin-left: 28px;
+}
+
+.container .mid .acakan {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    margin-left: 290px;
+    margin-top: 20px;
+    background: var(--blue-green);
+    border: 20px solid var(--light-blue);
+    border-radius: 30px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.container .mid .acakan .huruf {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    color: #fff;
+    background: var(--green-blue);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+    border: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.container .mid .acakan .huruf h3 {
+    position: absolute;
+    margin-left: 28px;
+}

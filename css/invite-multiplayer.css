@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+:root {
+    --dark-blue: #00498E;
+    --medium-blue: #5B90E0;
+    --light-blue: #A2D2FF;
+    --blue-green: #3BDBF1;
+    --green-blue: #3BF1D0;
+    --blue-grey: #80ADD7;
+    --light-grey: #D9D9D9;
+    --yellow-brown: #FFCF71;
+    --orange : #FF6B00;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.back {
+    height: 30px;
+    padding: 20px;
+    background: var(--blue-green);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.back:hover {
+    background: var(--light-blue);
+}
+
+.back a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.container .atas {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+.container .mid {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .atas h2 {
+    color: var(--dark-blue);
+}
+
+.container .atas a {
+    padding: 20px 30px;
+    background: var(--blue-green);
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 550px;
+    font-size: 22px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container .atas a:hover {
+    background: var(--light-blue);
+}
+
+.container .players {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+}
+
+.container .players .list-players {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 100px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.container .players .list-players .player-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container .players .list-players .player-info p {
+    color: var(--dark-blue);
+}
+
+.container .players .list-players .player-info img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.kanan {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 70px; */
+}
+
+.kanan .score {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+
+.kanan .score p {
+    color: var(--yellow-brown);
+}
+
+.kanan .score img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.invite {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+    margin-top: 50px;
+    color: var(--dark-blue);
+}
+
+.invite img {
+    width: 70px;
+    height: 70px;
+}
+
+.invite p {
+    margin-left: 5px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    margin-left: 400px;
+    margin-top: 100px;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 500px; 
+    height: 360px; 
+    border-radius: 30px;
+    overflow: auto;
+    background-color: var(--light-blue); 
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+  
+.modal-content {
+    background-color: var(--blue-grey);
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 80%; 
+    border-radius: 30px;
+}
+
+.modal-content h3 {
+    color: #fff;
+    margin-left: 120px;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: var(--dark-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.invite-friends {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 255px;
+}
+
+.invite-friends .invite-info {
+    display: flex;
+    align-items: center;
+    background: var(--light-blue);
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.invite-friends .invite-info p {
+    color: var(--dark-blue);
+}
+
+.invite-friends .invite-info img {
+    width: 20px;
+    height: 20px;
+}

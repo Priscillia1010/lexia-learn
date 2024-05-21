@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexia Learn</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../assets/stack-of-books.png" alt="">
+            <h3>Lexia Learn</h3>
+        </div>
+        <div class="section">
+            <img src="../assets/graduation-hat.png" alt="">
+            <a href="../html/main-course.html" class="main main-active">Course</a>
+        </div>
+        <div class="section">
+            <img src="../assets/friends.png" alt="">
+            <a href="../html/main-friends.html" class="main">Friends</a>
+        </div>
+        <div class="section">
+            <img src="../assets/quest.png" alt="">
+            <a href="../html/main-quest.html" class="main">Quests</a>
+        </div>
+        <div class="section">
+            <img src="../assets/user.png" alt="">
+            <a href="../html/main-profile.html" class="main">Profile</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="atas">
+            <div class="unit">
+                <p>Section 1. Unit 1</p>
+                <h4>Going to the Zoo</h4>
+            </div>
+            <div class="items-container">
+                <div class="items">
+                    <img src="../assets/heart.png" alt="">
+                    <p style="color: red;">5</p>
+                </div>
+                <div class="items">
+                    <img src="../assets/reward.png" alt="">
+                    <p style="color: #FFCF71;">100XP</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-mid">
+            <div class="level">
+                <div class="start-atas">
+                    <div class="start">
+                        <p>Start</p>
+                    </div>
+                    <div class="presection">
+                        <a href="../html/presection.html">Pre-Section</a>
+                    </div>
+                </div>
+                <div class="part-container">
+                    <div class="part">
+                        <a href=""><img src="../assets/star.png" alt=""></a>
+                    </div>
+                    <img src="../assets/idea.png" alt=""  style="width: 50px; margin-left: 450px;">
+                    <img src="../assets/open-book.png" alt=""  style="width: 80px; margin-left: 150px; transform: rotate(30deg);">
+                </div>
+                <div class="part-container" style="margin-left: 100px;">
+                    <div class="part">
+                        <a href=""><img src="../assets/star.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="part-container" style="margin-left: 200px;">
+                    <div class="part" style="background: #3BDBF1;">
+                        <a href="../html/ready-spelling-bee.html" style="background: #3BF1D0;"><img src="../assets/star.png" alt=""></a>
+                    </div>
+                </div>
+                <button class="open" id="treasure">Open</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="../assets/treasure.png" alt="">
+                        <div class="earn">
+                            <p>You earn 100 XP <img src="../assets/reward.png" alt=""> 5 <img src="../assets/heart.png" alt=""></p>
+                        </div>
+                        <button class="claim">Claim</button>
+                    </div>
+                </div>
+                <div class="treasure">
+                    <a href=""><img src="../assets/treasure.png" alt="" style="margin-left: 300px; width: 70px;"></a>
+                    <img src="../assets/pen.png" alt="" style="width: 50px; margin-left: 100px; margin-top: 30px;">
+                </div>
+                <div class="part-container">
+                    <div class="part" style="background: red;">
+                        <a href="" style="background: #3BDBF1"><img src="../assets/star.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="kanan">
+                <div class="info-container">
+                    <h4>Go to Leaderboard</h4>
+                    <div class="info">
+                        <div class="leaderboard-img">
+                            <img src="../assets/friends.png" alt="" style="margin-top: 20px;">
+                        <img src="../assets/podium.png" alt="">
+                        </div>
+                        <div class="multiplayer-des">
+                            <a href="../html/main-friends.html">Play Multiplayer</a>
+                            <p>Play Multiplayer to earn <span style="color: #FFCF71;">XP</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-container">
+                    <h4>Daily Quest</h4>
+                    <a href="../html/main-quest.html" style="color: #A2D2FF; font-size: 12px; margin-left: 200px; text-decoration: none;">View All</a>
+                    <div class="info">
+                        <img src="../assets/lightning.png" alt="">
+                        <div class="info-des">
+                            <p>Earn 10 XP</p>
+                            <div class="xp">
+                                <button>10/10</button>
+                                <img src="../assets/treasure.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="../js/open-treasure.js"></script>
+</body>
+</html>

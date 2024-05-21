@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+:root {
+    --dark-blue: #00498E;
+    --medium-blue: #5B90E0;
+}
+
+.logo {
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    font-size: 20px;
+    color: var(--dark-blue);
+    position: relative; 
+    margin: 0; 
+}
+
+h2 {
+    color: var(--dark-blue);
+    margin: 30px 0 0 580px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.login input {
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    font-family: sans-serif;
+    background: var(--dark-blue);
+    opacity: 45%;
+    color: #fff;
+    border: 1px solid --dark-blue;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.login input::placeholder {
+    color: #fff; 
+    font-size: 16px; 
+    font-style: normal; 
+}
+
+.login .btn-login {
+    width: 500px;
+    height: 65px;
+    background: var(--dark-blue);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.login .btn-login:hover {
+    background-color: var(--medium-blue);
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login .a-login {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo .btn-register {
+    width: 90px;
+    height: 40px;
+    background: var(--dark-blue);
+    opacity: 45%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: none;
+    transition: box-shadow 0.3s ease;
+    margin-left: 800px;
+}
+
+
+.logo .btn-register:hover {
+    background-color: var(--dark-blue);
+    opacity: 100%;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo .a-register {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}

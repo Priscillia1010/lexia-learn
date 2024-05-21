@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+:root {
+    --dark-blue: #00498E;
+    --medium-blue: #5B90E0;
+    --light-blue: #A2D2FF;
+    --blue-green: #3BDBF1;
+    --green-blue: #3BF1D0;
+    --light-grey: #D9D9D9;
+    --yellow-brown: #FFCF71;
+    --orange : #FF6B00;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    height: 1000px;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-right: 1px solid var(--dark-blue);
+}
+
+.sidebar .logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.sidebar .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.sidebar .logo h3 {
+    font-size: 14px;
+    color: var(--dark-blue);
+    position: relative; 
+    margin: 0; 
+}
+
+.sidebar .section {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    color: var(--dark-blue);
+    margin-bottom: 50px;
+}
+
+.sidebar .section img {
+    width: 40px;
+}
+
+.sidebar .section .main {
+   text-decoration: none;
+   color: var(--dark-blue);
+   margin-left: 20px;
+}
+
+.sidebar .section .main:hover, .sidebar .section .main-active {
+    background: var(--light-blue);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container {
+    display: flexbox;
+}
+
+.container .atas {
+    width: 1000px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.container .atas {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.container .atas img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.container .atas input {
+    width: 150px;
+    height: 50px;
+    margin-left: 80px;
+    padding-left: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+.container .atas .items-container {
+    width: 300px;
+    align-items: center;
+    display: flex;
+    margin-left: 350px;
+}
+
+.container .atas .items-container .items {
+    width: 90px;
+    align-items: center;
+    display: flex;
+}
+
+.container .atas .items-container .items img {
+    width: 40px;
+    height: 40px;
+}
+
+.container .atas .items-container .items p {
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.players {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-mid {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-mid .mid-atas {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-mid .mid-atas .podium {
+    margin-left: 400px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container-mid .mid-atas .podium img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-mid .mid-atas .podium h3 {
+    color: var(--dark-blue);
+}
+
+.container-mid .mid-atas button {
+    margin-left: 100px;
+    margin-top: 30px;
+    background: var(--blue-green);
+    width: 150px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.container-mid .mid-atas button:hover {
+    background: var(--light-blue);
+}
+
+.container-mid .mid-atas button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container-mid .list-players {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 100px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.container-mid .list-players .player-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-mid .list-players .player-info p {
+    color: var(--dark-blue);
+}
+
+.container-mid .list-players .player-info img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.kanan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.kanan .score {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+
+.kanan .score p {
+    color: var(--yellow-brown);
+}
+
+.kanan .score img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.container-mid .lock-info {
+    background: var(--blue-green);
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 300px;
+    width: 300px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.container-mid .lock-info h4 {
+    line-height: 40px;
+}

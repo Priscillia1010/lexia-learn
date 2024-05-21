@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+:root {
+    --dark-blue: #00498E;
+    --medium-blue: #5B90E0;
+    --light-blue: #A2D2FF;
+    --blue-green: #3BDBF1;
+    --green-blue: #3BF1D0;
+    --blue-grey: #80ADD7;
+    --light-grey: #D9D9D9;
+    --yellow-brown: #FFCF71;
+    --orange : #FF6B00;
+}
+
+body {
+    background-color: var(--blue-green);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .atas {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.container .atas, .container h1 {
+    margin-left: 330px;
+}
+
+.container .atas h3 {
+    color: #fff;
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+.container .atas img {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+.container a {
+    width: 80px;
+    padding: 20px 30px;
+    background: var(--blue-grey);
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 900px;
+}
+
+.container a:hover {
+    background: var(--light-blue);
+}

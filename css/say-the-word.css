@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+:root {
+    --dark-blue: #00498E;
+    --medium-blue: #5B90E0;
+    --light-blue: #A2D2FF;
+    --blue-green: #3BDBF1;
+    --green-blue: #3BF1D0;
+    --light-green-blue: #BCFFF3;
+    --light-grey: #D9D9D9;
+    --yellow-brown: #FFCF71;
+    --orange : #FF6B00;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .atas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.container .atas .info, .container .atas .button {
+    display: flex;
+    align-items: center;
+}
+
+.container .atas .info .logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.container .atas .info .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.container .atas .info .logo h3 {
+    font-size: 14px;
+    color: var(--dark-blue);
+    position: relative; 
+    margin: 0; 
+}
+
+.container .atas .info h2 {
+    width: 200px;
+    color: var(--dark-blue);
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.container .atas .info .items-container {
+    width: 300px;
+    align-items: center;
+    display: flex;
+    margin-left: 220px;
+}
+
+.container .atas .info .items-container .items {
+    width: 90px;
+    align-items: center;
+    display: flex;
+}
+
+.container .atas .info .items-container .items img {
+    width: 40px;
+    height: 40px;
+}
+
+.container .atas .info .items-container .items p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.container .atas .button a {
+    background-color: var(--blue-green);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    width: 115px;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.container .atas .button a:hover {
+    background: var(--light-blue);
+}
+
+.container .atas .button button, .container .atas .button img {
+    margin-left: 800px;
+}
+
+.container .atas .button button {
+    background-color: var(--dark-blue);
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+}
+
+.container .atas .button img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.container .mid .record {
+    display: flex;
+    align-items: center;
+    margin-left: 550px;
+}
+
+.container .mid .record img {
+    margin-top: -20px;
+    width: 50px;
+    height: 50px;
+}
+
+.container .mid .word {
+    background: var(--light-green-blue);
+    border: 1px solid var(--yellow-brown);
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 420px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .mid .word h1 {
+    color: var(--dark-blue);
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.container .bottom {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: var(--blue-green);
+    color: #fff;
+    width: 1262px;
+    height: 240px;
+}
+
+.container .bottom h3 {
+    margin-left: 100px;
+}

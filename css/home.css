@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+:root {
+    --dark-blue: #00498E;
+    --medium-blue: #5B90E0;
+}
+
+.logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    font-size: 20px;
+    color: var(--dark-blue);
+    position: relative; 
+    margin: 0; 
+}
+
+.main {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main .main-des {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.main .main-des h2 {
+    color: var(--dark-blue);
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.main .main-des .start {
+    background-color: var(--dark-blue);
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.main .main-des .start:hover {
+    background-color: var(--medium-blue);
+    color: var(--dark-blue);
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main .main-des p {
+    color: var(--dark-blue);
+    margin-top: 40px;
+}
+
+.main .main-des .here {
+    color: var(--medium-blue);
+    text-decoration: none;
+}
+
+.main .main-des .here:hover {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.main .main-image img {
+    width: 400px;
+    height: auto;
+}
+
+.footer {
+    background-color: var(--dark-blue);
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: 90px;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+}
+
+
+  
