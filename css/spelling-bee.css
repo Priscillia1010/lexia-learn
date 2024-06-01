@@ -14,9 +14,9 @@
     --dark-blue: #00498E;
     --medium-blue: #5B90E0;
     --light-blue: #A2D2FF;
-    --blue-grey: #80ADD7;
     --blue-green: #3BDBF1;
     --green-blue: #3BF1D0;
+    --light-green-blue: #BCFFF3;
     --light-grey: #D9D9D9;
     --yellow-brown: #FFCF71;
     --orange : #FF6B00;
@@ -123,62 +123,75 @@
     margin-left: 5px;
 }
 
-.container .mid {
+.container .mid .word {
+    background: var(--light-green-blue);
+    border: 1px solid var(--yellow-brown);
+    width: 600px;
+    height: 75px;
+    border-radius: 20px;
+    margin-left: 320px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .mid .word hr {
+    border: 1px solid var(--yellow-brown);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.container .mid .word {
+    color: var(--dark-blue);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container .mid audio {
+    width: 200px;
+    border-radius: 50px;
+    margin-left: 520px;
+}
+
+.container .bottom {
     display: flex;
     flex-direction: column;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: var(--blue-green);
+    width: 1218px;
+    height: 230px;
+    padding-top: 40px;
+    padding-left: 48px;
+    padding-bottom: 30px;
 }
 
-.container .mid .isian {
+.container .bottom .row {
     display: flex;
     align-items: center;
-    margin-left: 320px;
+    margin-bottom: 20px;
 }
 
-.container .mid .isian .isian-huruf {
-    background-color: var(--green-blue);
-    border: 1px solid var(--yellow-brown);
-    border-radius: 20px;
-    margin-right: 20px;
-    padding: 20px 40px;
-    color: #fff;
-}
-
-.container .mid .isian .clue {
-    width: 30px;
-    height: 68px;
-    font-size: 20px;
-    color: #fff;
-    background: var(--blue-green);
-    border: none;
-}
-
-.container .mid .acakan {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    height: 200px;
-    margin-left: 290px;
-    margin-top: 20px;
-    background: var(--blue-green);
-    border: 20px solid var(--light-blue);
-    border-radius: 30px;
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
-}
-
-.container .mid .acakan .huruf {
-    width: 80px;
-    height: 80px;
-    font-size: 20px;
-    color: #fff;
+.container .bottom button {
+    width: 60px;
+    height: 60px;
     background: var(--green-blue);
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
-    border: none;
-    margin-top: 30px;
-    margin-left: 30px;
     border-radius: 20px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
-.container .mid .acakan .huruf h3 {
-    position: absolute;
-    margin-left: 28px;
+.container .bottom button:hover {
+    background: var(--light-blue);
+}
+
+.container .bottom .big {
+    width: 120px;
+}
+
+.container .bottom .spasi {
+    width: 360px;
 }

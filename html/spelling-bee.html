@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexia Learn</title>
+    <link rel="stylesheet" href="../css/spelling-bee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="atas">
+            <div class="info">
+                <div class="logo">
+                    <img src="../assets/stack-of-books.png" alt="">
+                    <h3>Lexia Learn</h3>
+                </div>
+                <h2>Spelling Bee</h2>
+                <div class="items-container">
+                    <div class="items">
+                        <img src="../assets/heart.png" alt="">
+                        <p id="hearts" style="color: red;">5</p>
+                    </div>
+                    <div class="items">
+                        <img src="../assets/reward.png" alt="">
+                        <p id="xp" style="color: #FFCF71;">100</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <a href="../html/main-course-unlock.html">Back to Level</a>
+                <button>Hint</button>
+                <img src="../assets/idea.png" alt="">
+            </div>
+        </div>
+        <div class="mid">
+            <audio controls>
+                <source src="../sound/animal.mp3">
+            </audio>
+            <div class="word" id="word">
+                <hr>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="row">
+                <button>A</button>
+                <button>B</button>
+                <button>C</button>
+                <button>D</button>
+                <button>E</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>I</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+                <button>M</button>
+                <button class="big" data-action="delete">Delete</button>
+            </div>
+            <div class="row">
+                <button>N</button>
+                <button>O</button>
+                <button>P</button>
+                <button>Q</button>
+                <button>R</button>
+                <button>S</button>
+                <button>T</button>
+                <button>U</button>
+                <button>V</button>
+                <button>W</button>
+                <button>X</button>
+                <button>Y</button>
+                <button>Z</button>
+                <button class="big" data-action="enter">Enter</button>
+            </div>
+            <div class="row">
+                <button>?</button>
+                <button>!</button>
+                <button>/</button>
+                <button>"</button>
+                <button>%</button>
+                <button class="spasi" data-action="space"></button>
+                <button>#</button>
+                <button>&</button>
+                <button>,</button>
+                <button>.</button>
+                <button>;</button>
+            </div>
+           
+        </div>
+    </div>
+    <script src="../js/spelling-bee.js"></script>
+    <script src="../js/is-phone.js"></script>
+</body>
+</html>

@@ -75,6 +75,7 @@ h2 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     border: none;
+    color: #fff;
     transition: box-shadow 0.3s ease;
 }
 
@@ -83,12 +84,6 @@ h2 {
     cursor: pointer;
     transition: 0.5s ease;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.login .a-login {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
 }
 
 .logo .btn-register {
@@ -116,4 +111,12 @@ h2 {
     color: #fff;
     font-size: 14px;
     text-decoration: none;
+}
+
+#error-line {
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: 12px;
 }

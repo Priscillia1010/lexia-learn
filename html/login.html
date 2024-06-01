@@ -19,9 +19,12 @@
     <h2>Login</h2>
 
     <div class="login">
-        <input type="text" placeholder="Enter email or username...">
-        <input type="password" placeholder="Enter password...">
-        <button class="btn-login"><a href="../html/main-course.html" class="a-login">Login</a></button>
+        <input type="text" id="username" placeholder="Enter email or username...">
+        <input type="password" id="pass" placeholder="Enter password...">
+        <div id="error-line">Error Line</div>
+        <button id="login-btn" onclick="validateForm(event)" class="btn-login">Login</button>
     </div>
+    <script src="../js/login.js"></script>
+    <script src="../js/is-phone.js"></script>
 </body>
 </html>
