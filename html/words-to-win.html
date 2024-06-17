@@ -21,11 +21,11 @@
                     <div class="items-container">
                         <div class="items">
                             <img src="../assets/heart.png" alt="">
-                            <p style="color: red;">5</p>
+                            <p id="hearts" style="color: red;">5</p>
                         </div>
                         <div class="items">
                             <img src="../assets/reward.png" alt="">
-                            <p style="color: #FFCF71;">100XP</p>
+                            <p id="xp" style="color: #FFCF71;">100XP</p>
                         </div>
                     </div>
                 </div>
@@ -51,6 +51,32 @@
                 </div>
             </div>
         </div>
+
+         <!-- Modal for Correct Answer -->
+         <div id="correctModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Correct! Ready to say the word.</p>
+                <button id="proceedButton">Next</button>
+            </div>
+        </div>
+
+        <!-- Modal for Incorrect Answer -->
+        <div id="incorrectModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Try again!</p>
+            </div>
+        </div>
+
+        <!-- Modal for No Hearts Left -->
+        <div id="noHeartsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>No more hearts! Redirecting to main page.</p>
+            </div>
+        </div>
+        
         <script src="../js/words-to-win.js"></script>
         <script src="../js/is-phone.js"></script>
     </body>

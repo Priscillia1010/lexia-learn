@@ -25,7 +25,7 @@
                     </div>
                     <div class="items">
                         <img src="../assets/reward.png" alt="">
-                        <p id="xp" style="color: #FFCF71;">100</p>
+                        <p id="xp" style="color: #FFCF71;">100 XP</p>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,6 @@
                 <source src="../sound/animal.mp3">
             </audio>
             <div class="word" id="word">
-                <hr>
             </div>
         </div>
         <div class="bottom">
@@ -89,9 +88,64 @@
                 <button>.</button>
                 <button>;</button>
             </div>
-           
         </div>
     </div>
+
+    <!-- <div id="modal-correct" class="modal">
+        <div class="modal-content">
+            <h3>That's Correct!</h3>
+            <img src="../assets/checklist.png" alt="">
+            <div class="modal-info">
+                You earn 10Xp <img src="../assets/reward.png" alt="">
+            </div>
+            <button onclick="redirectToNextLevel()">Next</button>
+        </div>
+    </div>
+
+    <div id="modal-incorrect" class="modal">
+        <div class="modal-content">
+            <h3>Oops, You're Wrong</h3>
+            <img src="../assets/remove.png" alt="">
+            <div class="modal-info">
+                You lose -1 <img src="../assets/heart.png" alt="">
+            </div>
+            <button onclick="closeModal('modal-incorrect')">Try Again</button>
+        </div>
+    </div>
+
+    <div id="modal-game-over" class="modal">
+        <div class="modal-content">
+            <h3>Oops, You're Wrong</h3>
+            <img src="../assets/remove.png" alt="">
+            <div class="modal-info">
+                You lose -1 <img src="../assets/heart.png" alt="">
+            </div>
+            <p>You have left 0 <img src="../assets/heart.png" alt=""></p>
+            <button onclick="redirectToMainPage()">Back to Main</button>
+        </div>
+    </div> -->
+
+    <div id="modal-correct" class="modal">
+        <div class="modal-content">
+            <p>Correct!</p>
+            <button onclick="redirectToNextLevel()">Next</button>
+        </div>
+    </div>
+
+    <div id="modal-incorrect" class="modal">
+        <div class="modal-content">
+            <p>Incorrect, try again!</p>
+            <button onclick="closeModal('modal-incorrect')">Try Again</button>
+        </div>
+    </div>
+
+    <div id="modal-game-over" class="modal">
+        <div class="modal-content">
+            <p>Game Over!</p>
+            <button onclick="redirectToMainPage()">Back to Main</button>
+        </div>
+    </div>
+
     <script src="../js/spelling-bee.js"></script>
     <script src="../js/is-phone.js"></script>
 </body>

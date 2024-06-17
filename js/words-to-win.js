@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     let draggedElement;
+    let hearts = 5;
+    let xp = 100;
 
     // Function to handle the drag start event
     function handleDragStart(e) {
@@ -28,6 +30,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             draggedElement.innerHTML = this.innerHTML;
             this.innerHTML = e.dataTransfer.getData('text/html');
         }
+
+        checkWord();
         return false;
     }
 
@@ -37,6 +41,54 @@ document.addEventListener('DOMContentLoaded', (event) => {
         [].forEach.call(cols, function (col) {
             col.classList.remove('over');
         });
+    }
+
+    // Function to check the current word
+    function checkWord() {
+        let currentWord = '';
+        document.querySelectorAll('.isian-huruf').forEach((el) => {
+            currentWord += el.innerText;
+        });
+
+        if (currentWord === 'HOUSE') {
+            xp += 50; // Increase XP by 50
+            document.getElementById('xp').innerText = `${xp}XP`;
+            showModal('correctModal');
+        } else if (currentWord.length === 5) {
+            hearts--;
+            document.getElementById('hearts').innerText = hearts;
+            if (hearts > 0) {
+                showModal('incorrectModal');
+            } else {
+                showModal('noHeartsModal');
+                setTimeout(() => {
+                    window.location.href = '../html/main-course-unlock.html';
+                }, 3000); // Redirect after 3 seconds
+            }
+        }
+    }
+
+    // Function to show modal
+    function showModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+
+        const closeModal = () => {
+            modal.style.display = 'none';
+        };
+
+        modal.querySelector('.close').onclick = closeModal;
+        if (modalId === 'correctModal') {
+            document.getElementById('proceedButton').onclick = () => {
+                window.location.href = '../html/ready-say-the-word.html';
+            };
+        }
+
+        window.onclick = (event) => {
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
     }
 
     let cols = document.querySelectorAll('.huruf');
